@@ -1,0 +1,299 @@
+/* Contact form */
+#contact h1 {
+  font-size: 41px;
+  font-weight: 400;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+#contact p {
+  margin: 0 auto 10px;
+  padding: 0 20px;
+}
+
+#contact .contact-form {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contact .contact-form .control-group {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+#contact .contact-form .control-group label {
+  margin-bottom: 0;
+}
+
+#contact .contact-form .control-group:nth-child(3) {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#contact .contact-form label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 22px;
+  padding-left: 10px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  letter-spacing: 1px;
+  border: none;
+  border: 1px solid #777 !important;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+#contact .contact-form input::-webkit-input-placeholder, #contact .contact-form textarea::-webkit-input-placeholder {
+  color: #777;
+}
+
+#contact .contact-form input::-moz-placeholder, #contact .contact-form textarea::-moz-placeholder {
+  color: #777;
+}
+
+#contact .contact-form.error input.active, #contact .contact-form.error textarea.active {
+  border-color: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form.success input, #contact .contact-form.success textarea {
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+#contact .contact-form textarea {
+  height: 110px;
+  padding-top: 10px;
+  resize: none !important;
+}
+
+#contact .contact-form input:focus, #contact .contact-form input:active {
+  border: 1px solid #d6d6d6;
+  outline: none;
+  background: rgba(255, 255, 255, .06);
+}
+
+#contact .contact-form textarea:focus, #contact .contact-form textarea:active {
+  border: 1px solid #fff;
+  outline: none;
+  background: rgba(255, 255, 255, .06);
+}
+
+#contact .contact-form button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 50px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 145px;
+  height: 50px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  border: 1px solid #d6d6d6;
+  border-radius: 0;
+  background-color: #007bff;
+}
+
+#contact .contact-form.success button {
+  border-color: rgba(95, 234, 110, 1) !important;
+  background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form.error button {
+  border-color: rgba(251, 9, 9, 1) !important;
+  background: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form button:hover, #contact .contact-form button:focus, #contact .contact-form button:active {
+  color: #000;
+  border-color: #d6d6d6;
+  outline: none !important;
+  background: rgba(255, 255, 255, .00);
+  box-shadow: none;
+}
+
+#contact .contact-form button:hover {
+  background: #0069d9 !important;
+}
+
+#contact .contact-form button:focus, #contact .contact-form button:active {
+  background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form .btn-primary[disabled] {
+  opacity: 1;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form.error button:hover, #contact .contact-form.error button:focus, #contact .contact-form.error button:active {
+  border-color: rgba(251, 9, 9, 1);
+}
+
+#contact .contact-form.error button:focus {
+  background: rgba(251, 9, 9, 1);
+}
+
+#contact .contact-form.success button:hover, #contact .contact-form.success button:focus, #contact .contact-form.success button:active {
+  border-color: rgba(95, 234, 110, 1);
+}
+
+#contact .contact-form.success button:hover, #contact .contact-form.success button:focus {
+  background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form button::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+  background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form.success button::before {
+  background: rgba(95, 234, 110, 1) !important;
+}
+
+#contact .contact-form.error button::before {
+  background: rgba(251, 9, 9, 1) !important;
+}
+
+#contact .contact-form.success button::before {
+  background: rgba(255, 255, 255, 1);
+}
+
+#contact .contact-form button:hover::before {
+  right: 0;
+  left: auto;
+  width: 0;
+}
+
+#contact .contact-form.success button:hover::before {
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+#contact .contact-form button i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#contact .contact-form button:hover i {
+  -webkit-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+}
+
+#contact .contact-form button i.first {
+  left: -200%;
+  color: #fff;
+}
+
+#contact .contact-form button i.second {
+  left: 0;
+  color: #fff;
+}
+
+#contact .contact-form button:hover i.first {
+  left: 0;
+}
+
+#contact .contact-form button:hover i.second {
+  left: 200%;
+}
+
+#contact .contact-form.error button i.second:before {
+  content: '\f00d';
+  color: #fff;
+}
+
+#contact .contact-form.success button i.second:before {
+  content: '\f00c';
+  color: #fff;
+}
+
+#contact .contact-form.success button:hover i.first {
+  left: -200%;
+}
+
+#contact .contact-form.success button:hover i.second {
+  left: 0;
+}
+
+#contact .social-icons {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#contact .social-icons li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#contact .social-icons li a {
+  font-size: 22px;
+  line-height: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, .9);
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+#contact .social-icons li a:hover {
+  text-decoration: none;
+  color: #000;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, .6);
+}
